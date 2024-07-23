@@ -1,0 +1,165 @@
+/* Apply a background image to the body */
+body {
+  background-image: url('https://cdn.tovp.org/wp-content/uploads/2021/11/tovp-aerial-shot-09-26-2021-photo-by-thakur-saranga-das-web.jpg.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  max-width: 800px;
+  min-width: 300px;
+  width: 90%;
+  background: rgba(13, 9, 9, 0.25);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.323);
+  box-sizing: border-box;
+}
+
+.progress-section, .headr, .progress-table {
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(19, 16, 16, 0.478);
+  background: rgba(255, 255, 241, 0.745);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.update-section{
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background: rgba(80, 76, 76, 0.25);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.headr {
+  height: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input[type="email"], input[type="password"], button {
+  padding: 25px;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background-color: rgba(214, 214, 214, 0.671);
+  box-sizing: border-box;
+  height: 50px;
+  
+}
+
+h1, h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  background-color: rgba(0, 123, 255, 0.65);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0b23f7;
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: none;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .container {
+      padding: 15px;
+      max-width: 95%;
+      margin: 10px auto;
+  }
+
+  input[type="email"], input[type="password"], button {
+      padding: 8px;
+      font-size: 14px;
+  }
+
+  table, th, td {
+      padding: 8px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+      padding: 10px;
+      margin: 5px auto;
+  }
+
+  input[type="email"], input[type="password"], button {
+      padding: 6px;
+      font-size: 12px;
+  }
+
+  table, th, td {
+      padding: 6px;
+  }
+}

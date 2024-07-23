@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Japathon Tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Style for placeholder text */
+        
+        input::placeholder {
+            margin-top: 4px;
+            color: black;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="background: rgba(255, 255, 255, 0.701); border-radius: 20px; padding: 20px; box-shadow: 0 0 10px rgba(181, 181, 181, 0.392);" >
+        <h1>Welcome, <?php echo $_SESSION['name']; ?></h1>
+        <h2>Total Rounds: <?php echo $total_rounds; ?></h2>
+        <table >
+            <thead>
+                <tr >
+                    <th>Date</th>
+                    <th>Rounds</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($progress as $entry): ?>
+                    <tr style="font-weight: 600;">
+                        <td><?php echo $entry['date']; ?></td>
+                        <td><?php echo $entry['rounds']; ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+        <form action="update_progress.php" method="post" style="margin-top: 10px;">
+            <input type="number" name="rounds" placeholder=" Today's Seva" required min="0" required style="height: 45px; border-radius: 20px; margin-bottom:10px; padding: 10px; box-shadow: 0 0 10px rgba(215, 212, 212, 0.527); font-weight: 700;"> 
+            <button type="submit">Update Progress</button>
+        </form>
+        <a href="logout.php">Logout</a>
+    </div>
+</body>
+</html>

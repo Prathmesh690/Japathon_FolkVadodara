@@ -1,0 +1,74 @@
+/* Apply a background image to the body */
+body {
+    background-image: url('https://cdn.tovp.org/wp-content/uploads/2021/11/tovp-aerial-shot-09-26-2021-photo-by-thakur-saranga-das-web.jpg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh; /* Ensure body covers the full viewport height */
+}
+
+/* Center the container in the viewport */
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Optional: Add padding around the container */
+}
+
+/* Style the container holding the form */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(131, 131, 131, 0.467); /* Greyish background with opacity */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Style form elements */
+form input[type="text"], 
+form input[type="email"], 
+form input[type="password"], 
+form button {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form input[type="password"] {
+    background: rgba(240, 240, 240, 0.8);
+}
+
+form button {
+    margin-bottom: 10px;
+    background-color: #0564c9ac;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Style form headings */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
